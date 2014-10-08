@@ -6,21 +6,21 @@ Watches a file input for changes, AND watches the actual file(s) for disk-based 
 Why use it
 ------
 * enable live css-tweaking while using a fancy desktop-based editor.
-* update a displayed camera image with a fresh capture
-* send real-time data to in-browser apps from any application or shell script that can output to a file
+* instantly update a displayed camera image with a fresh capture when as soon as it saves
+* send real-time data to webpages from any application or shell script that can output to a file
 * monitor log files to play certain audio tags if the tail matches a regexp
-* got any ideas? add them in.
+* got any ideas? add them in here!
 
 
 How it works
 ------
-* Adds a change event to a specified input[type=file], along with a function to handle change events.
-* On any populated files, watchfile.js adds a .url property to each file object, which can be fed to a link href, script src, iframe src, img src, ajax, etc.
-* While the file is populated, it's lastModified date is repeatedly checked for changes, a default of 3 times a second, but is also customizable.
+* Adds a change event to a specified input[type=file]
+* On any populated files, watchfile.js adds a .url property to each file object, which can be fed to an a/link href, script/img/iframe src, ajax, etc.
+* Once the file input is populated, the file(s) lastModified date is repeatedly checked for changes, a default of 3 times a second.
 * When a populated file's date on the disk/path changes, file.url is updated with the new date and the callBack is fired again.
  
  
- How to use it
+How to use it
 -------
 * add a file input to your html page
 * add the watchfile.js code to you page, copy and paste or external script.
@@ -38,6 +38,6 @@ Call Signature
 
 Live Demo
 -------
-See demo page at <http://danml.com/watchfile.html> for a couple simple demos - watching file contents in a text area and mounting a local CSS file.
+See demo page at <http://danml.com/watchfile.html> 
 
 
