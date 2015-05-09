@@ -11,7 +11,7 @@ function watchFile(inpFile, callBack, optNumPollIntervalMS, optNoURL ){
 	var fileList=[], timer;
 		
 	function clearList(){ // revokes un-needed URLs, clear list of watched files
-		if(optNoURL){
+		if(!optNoURL){
 			fileList.forEach(function(file){
 				URL.revokeObjectURL(file.url);
 			});
