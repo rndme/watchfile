@@ -5,7 +5,7 @@ Watches a file input for changes, AND watches the actual file(s) for disk-based 
 
 Why use it
 ------
-* enable live css-tweaking while using a fancy desktop-based editor.
+* enables live css-tweaking while using a fancy desktop-based editor.
 * instantly update a displayed camera image with a fresh capture when as soon as it saves
 * send real-time data to webpages from any application or shell script that can output to a file
 * monitor log files to play certain audio tags if the tail matches a regexp
